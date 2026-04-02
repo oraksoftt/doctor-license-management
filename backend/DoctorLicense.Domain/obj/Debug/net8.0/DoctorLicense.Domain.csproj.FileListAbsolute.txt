@@ -1,0 +1,11 @@
+D:\Development\doctor-license-management\backend\DoctorLicense.Domain\bin\Debug\net8.0\DoctorLicense.Domain.deps.json
+D:\Development\doctor-license-management\backend\DoctorLicense.Domain\bin\Debug\net8.0\DoctorLicense.Domain.dll
+D:\Development\doctor-license-management\backend\DoctorLicense.Domain\bin\Debug\net8.0\DoctorLicense.Domain.pdb
+D:\Development\doctor-license-management\backend\DoctorLicense.Domain\obj\Debug\net8.0\DoctorLicense.Domain.GeneratedMSBuildEditorConfig.editorconfig
+D:\Development\doctor-license-management\backend\DoctorLicense.Domain\obj\Debug\net8.0\DoctorLicense.Domain.AssemblyInfoInputs.cache
+D:\Development\doctor-license-management\backend\DoctorLicense.Domain\obj\Debug\net8.0\DoctorLicense.Domain.AssemblyInfo.cs
+D:\Development\doctor-license-management\backend\DoctorLicense.Domain\obj\Debug\net8.0\DoctorLicense.Domain.csproj.CoreCompileInputs.cache
+D:\Development\doctor-license-management\backend\DoctorLicense.Domain\obj\Debug\net8.0\DoctorLicense.Domain.dll
+D:\Development\doctor-license-management\backend\DoctorLicense.Domain\obj\Debug\net8.0\refint\DoctorLicense.Domain.dll
+D:\Development\doctor-license-management\backend\DoctorLicense.Domain\obj\Debug\net8.0\DoctorLicense.Domain.pdb
+D:\Development\doctor-license-management\backend\DoctorLicense.Domain\obj\Debug\net8.0\ref\DoctorLicense.Domain.dll
