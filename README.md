@@ -1,70 +1,60 @@
 # Doctor License Management System
 
-A full-stack Doctor License Management module for a Medical SaaS platform, built using **.NET 8 Clean Architecture** and **Next.js 14**.
+A comprehensive doctor license management module for a Medical SaaS platform, built with .NET 8 Clean Architecture and Next.js.
 
----
-
-## 🚀 Features
+## Features
 
 ### Backend
-- Clean Architecture (Domain, Application, Infrastructure, API)  
-- Full CRUD operations with soft delete  
-- Automatic license expiry status updates  
-- Duplicate license number prevention  
-- Input validation using **FluentValidation**  
-- Stored procedures for:  
-  - Search  
-  - Filtering  
-  - Pagination  
-  - Bonus: Get expired doctors  
-- Centralized error handling and logging  
+- Clean Architecture with Domain, Application, Infrastructure, and API layers
+- Full CRUD operations with soft delete
+- Automatic license expiry status updates
+- Duplicate license number prevention
+- Input validation using FluentValidation
+- Stored procedures for optimized listing with search/filter/pagination
+- Bonus stored procedure for expired doctors
+- Error handling and logging
 
 ### Frontend
-- **Next.js 14** (App Router)  
-- **Tailwind CSS** responsive UI  
-- Doctor table with:  
-  - Search (name / license)  
-  - Status filter  
-  - Status badges with color indicators  
-- Add/Edit forms with validation  
-- Pagination support  
-- Loading & empty states  
-- Expiring soon highlight (within 30 days)  
-- Modal-based forms for better UX  
+- Modern Next.js 14 with App Router
+- Responsive Tailwind CSS design
+- Doctor table with search (name/license) and status filter
+- Status badges with color coding
+- Add/Edit forms with validation
+- Loading and empty states
+- Pagination
+- Expiring soon highlight (30 days warning)
+- Modal forms for better UX
 
----
+## Tech Stack
 
-## 🛠 Tech Stack
+### Backend
+- .NET 8
+- Entity Framework Core
+- SQL Server
+- FluentValidation
+- Swagger/OpenAPI
 
-**Backend**  
-- .NET 8  
-- Entity Framework Core  
-- SQL Server  
-- FluentValidation  
-- Swagger / OpenAPI  
+### Frontend
+- Next.js 14
+- TypeScript
+- Tailwind CSS
+- Axios
+- React Hot Toast
 
-**Frontend**  
-- Next.js 14  
-- TypeScript  
-- Tailwind CSS  
-- Axios  
-- React Hot Toast  
+## Prerequisites
 
----
+- .NET 8 SDK
+- Node.js 18+
+- SQL Server (LocalDB, Express, or full version)
+- Git
 
-## 📋 Prerequisites
+## Setup Instructions
 
-Make sure you have:  
-- .NET 8 SDK  
-- Node.js 18+  
-- SQL Server (LocalDB / Express / Full)  
-- Git  
+### Database Setup
 
----
-
-## ⚙️ Setup Instructions
-
-### 1. Clone Repository
-```bash
-git clone https://github.com/oraksoftt/doctor-license-management.git
-cd doctor-license-management
+1. **Create the database and run scripts:**
+   ```bash
+   # Connect to SQL Server and execute scripts in order:
+   # 1. database/scripts/01_create_database.sql
+   # 2. database/scripts/02_create_doctors_table.sql
+   # 3. database/scripts/03_stored_procedures.sql
