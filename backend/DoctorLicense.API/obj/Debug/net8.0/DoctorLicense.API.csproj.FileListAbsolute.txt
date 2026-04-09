@@ -95,3 +95,4 @@ D:\Development\doctor-license-management\backend\DoctorLicense.API\obj\Debug\net
 D:\Development\doctor-license-management\backend\DoctorLicense.API\obj\Debug\net8.0\DoctorLicense.API.pdb
 D:\Development\doctor-license-management\backend\DoctorLicense.API\obj\Debug\net8.0\DoctorLicense.API.genruntimeconfig.cache
 D:\Development\doctor-license-management\backend\DoctorLicense.API\obj\Debug\net8.0\ref\DoctorLicense.API.dll
+D:\Development\doctor-license-management\backend\DoctorLicense.API\obj\Debug\net8.0\DoctorLicense.API.sourcelink.json

@@ -1,4 +1,4 @@
-// DoctorLicense.API/Program.cs
+
 using DoctorLicense.Application.DTOs;
 using DoctorLicense.Application.Services;
 using DoctorLicense.Application.Validators;

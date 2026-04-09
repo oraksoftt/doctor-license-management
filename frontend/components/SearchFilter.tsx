@@ -47,8 +47,10 @@ export default function SearchFilter({ onSearch, onStatusFilter, onToggleExpired
       >
         <option value="">All Status</option>
         <option value="Active">Active</option>
+        <option value="NearExpiry">Near Expiry</option>
         <option value="Expired">Expired</option>
         <option value="Suspended">Suspended</option>
+        <option value="Pending">Pending</option>
       </select>
       
       <button

@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("DoctorLicense.Application")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b82c487bed5b16335169fc88d3d0adc60f1138af")]
 [assembly: System.Reflection.AssemblyProductAttribute("DoctorLicense.Application")]
 [assembly: System.Reflection.AssemblyTitleAttribute("DoctorLicense.Application")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

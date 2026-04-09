@@ -6,7 +6,7 @@ export interface Doctor {
   specialization: string;
   licenseNumber: string;
   licenseExpiryDate: string;
-  status: 'Active' | 'Expired' | 'Suspended';
+  status: 'Active' | 'Expired' | 'Suspended' | 'Pending';
   createdDate: string;
 }
 

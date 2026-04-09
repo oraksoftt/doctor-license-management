@@ -9,3 +9,4 @@ D:\Development\doctor-license-management\backend\DoctorLicense.Domain\obj\Debug\
 D:\Development\doctor-license-management\backend\DoctorLicense.Domain\obj\Debug\net8.0\refint\DoctorLicense.Domain.dll
 D:\Development\doctor-license-management\backend\DoctorLicense.Domain\obj\Debug\net8.0\DoctorLicense.Domain.pdb
 D:\Development\doctor-license-management\backend\DoctorLicense.Domain\obj\Debug\net8.0\ref\DoctorLicense.Domain.dll
+D:\Development\doctor-license-management\backend\DoctorLicense.Domain\obj\Debug\net8.0\DoctorLicense.Domain.sourcelink.json

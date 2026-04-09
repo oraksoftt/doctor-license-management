@@ -10,9 +10,7 @@ namespace DoctorLicense.API.Controllers;
 [Route("api/[controller]")]
 public class DoctorsController : ControllerBase
 {
-    private readonly IDoctorService _doctorService;
-
-    //private readonly DoctorService _doctorService;
+    private readonly IDoctorService _doctorService;    
     private readonly ILogger<DoctorsController> _logger;
 
     public DoctorsController(IDoctorService doctorService, ILogger<DoctorsController> logger)

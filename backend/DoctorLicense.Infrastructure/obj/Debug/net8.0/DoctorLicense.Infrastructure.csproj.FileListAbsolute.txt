@@ -13,3 +13,4 @@ D:\Development\doctor-license-management\backend\DoctorLicense.Infrastructure\ob
 D:\Development\doctor-license-management\backend\DoctorLicense.Infrastructure\obj\Debug\net8.0\refint\DoctorLicense.Infrastructure.dll
 D:\Development\doctor-license-management\backend\DoctorLicense.Infrastructure\obj\Debug\net8.0\DoctorLicense.Infrastructure.pdb
 D:\Development\doctor-license-management\backend\DoctorLicense.Infrastructure\obj\Debug\net8.0\ref\DoctorLicense.Infrastructure.dll
+D:\Development\doctor-license-management\backend\DoctorLicense.Infrastructure\obj\Debug\net8.0\DoctorLicense.Infrastructure.sourcelink.json

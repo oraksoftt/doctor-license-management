@@ -90,13 +90,21 @@ public class DoctorRepository : IDoctorRepository
 
     public async Task<(IEnumerable<Doctor> Doctors, int TotalCount)> GetExpiredDoctorsAsync(int pageNumber, int pageSize)
     {
-        var pageNumberParam = new SqlParameter("@PageNumber", pageNumber);
-        var pageSizeParam = new SqlParameter("@PageSize", pageSize);
+        try
+        {
+            var pageNumberParam = new SqlParameter("@PageNumber", pageNumber);
+            var pageSizeParam = new SqlParameter("@PageSize", pageSize);
 
-        var result = await _context.Doctors.FromSqlRaw("EXEC sp_GetExpiredDoctors @PageNumber, @PageSize",pageNumberParam, pageSizeParam).ToListAsync();
+            var result = await _context.Doctors.FromSqlRaw("EXEC sp_GetExpiredDoctors @PageNumber, @PageSize", pageNumberParam, pageSizeParam).ToListAsync();
 
-        var totalCount = result.FirstOrDefault()?.GetType().GetProperty("TotalCount")?.GetValue(result.FirstOrDefault()) as int? ?? 0;
+            var totalCount = result.FirstOrDefault()?.GetType().GetProperty("TotalCount")?.GetValue(result.FirstOrDefault()) as int? ?? 0;
 
-        return (result, totalCount);
+            return (result, totalCount);
+        }
+        catch (Exception ex)
+        {
+
+            throw;
+        }
     }
 }

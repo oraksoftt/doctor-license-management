@@ -16,6 +16,8 @@ const getStatusColor = (status: string) => {
       return 'bg-red-100 text-red-800';
     case 'Suspended':
       return 'bg-yellow-100 text-yellow-800';
+    case 'Pending':
+    return 'bg-red'
     default:
       return 'bg-gray-100 text-gray-800';
   }
@@ -25,7 +27,10 @@ const isExpiringSoon = (expiryDate: string) => {
   const today = new Date();
   const expiry = new Date(expiryDate);
   const daysUntilExpiry = Math.ceil((expiry.getTime() - today.getTime()) / (1000 * 3600 * 24));
-  return daysUntilExpiry <= 30 && daysUntilExpiry > 0;
+  // console.log('showme ',daysUntilExpiry)
+  
+  // return daysUntilExpiry <= 50 && daysUntilExpiry > 0;
+  return daysUntilExpiry ;
 };
 
 export default function DoctorTable({ doctors, onEdit, onDelete }: DoctorTableProps) {
@@ -87,14 +92,19 @@ export default function DoctorTable({ doctors, onEdit, onDelete }: DoctorTablePr
               <td className="px-6 py-4 whitespace-nowrap">
                 <div className="text-sm text-gray-500 font-mono">{doctor.licenseNumber}</div>
               </td>
-              <td className="px-6 py-4 whitespace-nowrap">
+              {/* <td className="px-6 py-4 whitespace-nowrap">
                 <div className={`text-sm ${isExpiringSoon(doctor.licenseExpiryDate) && doctor.status === 'Active' ? 'text-yellow-600 font-semibold' : 'text-gray-500'}`}>
                   {formatDate(doctor.licenseExpiryDate)}
                   {isExpiringSoon(doctor.licenseExpiryDate) && doctor.status === 'Active' && (
                     <span className="ml-2 text-xs text-yellow-600">(Expiring soon)</span>
                   )}
                 </div>
+              </td> */}
+              <td className={`text-sm ${doctor.status === 'NearExpiry' ? 'text-yellow-600 font-semibold' : 'text-gray-500'}`}>
+              {formatDate(doctor.licenseExpiryDate)}
+                {doctor.status === 'NearExpiry' && <span className="ml-2 text-xs text-yellow-600">(Expiring soon)</span>}
               </td>
+              
               <td className="px-6 py-4 whitespace-nowrap">
                 <span className={`px-2 inline-flex text-xs leading-5 font-semibold rounded-full ${getStatusColor(doctor.status)}`}>
                   {doctor.status}

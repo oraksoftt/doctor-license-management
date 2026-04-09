@@ -3,10 +3,8 @@
 using DoctorLicense.Application.DTOs;
 using DoctorLicense.Domain.Entities;
 using DoctorLicense.Domain.Interfaces;
-
-//using DoctorLicense.Domain.Interfaces;
 using FluentValidation;
-//using System.ComponentModel.DataAnnotations;
+
 using ValidationException = FluentValidation.ValidationException;
 namespace DoctorLicense.Application.Services;
 
