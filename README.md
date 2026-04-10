@@ -157,3 +157,13 @@ doctor-license-management/
 ---
 
 
+
+
+
+
+
+## ✅ Notes
+
+- Designed following Clean Architecture principles
+- Focused on real-world SaaS use cases
+- Optimized using stored procedures for performance
