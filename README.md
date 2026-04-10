@@ -154,10 +154,6 @@ doctor-license-management/
 │
 └── database/
     └── scripts/                      # SQL scripts
----
-
-
-
 
 
 
