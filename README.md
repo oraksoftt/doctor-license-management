@@ -136,6 +136,7 @@ Open at: http://localhost:3000
 
 ## 📁 Project Structure
 
+```plaintext
 doctor-license-management/
 │
 ├── backend/
@@ -153,11 +154,6 @@ doctor-license-management/
 │
 └── database/
     └── scripts/                      # SQL scripts
-
 ---
 
-## ✅ Notes
 
-- Designed following Clean Architecture principles
-- Focused on real-world SaaS use cases
-- Optimized using stored procedures for performance
